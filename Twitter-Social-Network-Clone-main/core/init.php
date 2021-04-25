@@ -9,12 +9,13 @@ global $pdo;
 
 session_start();
 
-date_default_timezone_set('Africa/nairobi');
+date_default_timezone_set('Asia/kolkata');
 
 $getFromU = new User($pdo);
 $getFromT = new Tweet($pdo);
 $getFromF = new Follow($pdo);
 $getFromM = new Message($pdo);
 
-define("BASE_URL","http://localhost/twiga/twitter/");
+define("BASE_URL","http://127.0.0.1/twitter/");
+
 ?>
